@@ -58,10 +58,10 @@ Several occurrences of flooding in the city of São Paulo (Brazil) provide sever
         - The social network Twitter has a policy that makes it impossible to share personal information. Therefore, to obtain this information, use the Twitter Streaming API to capture the textual content from the tweets identifiers (**id_str**) contained in that file.
     - Create the directory called "**embeddings**" inside the "data" folder of the "**textual-features**" directory;
     - Create the directory called "**FastText**" inside the "**embeddings**" folder;
-        - Insert the NILC FastText models of the SKIP-GRAM type with 50 and 100 dimensions and CBOW with 50 and 100 dimensions.
+        - Insert the NILC FastText model of the SKIP-GRAM type with 50 and 100 dimensions and CBOW with 50 and 100 dimensions.
         - For more information: http://www.nilc.icmc.usp.br/embeddings.
     - Create the directory called "**Word2Vec**" inside the "**embeddings**" folder;
-        - Insert the NILC Word2Vec models of the SKIP-GRAM type with 50 and 100 dimensions and CBOW with 50 and 100 dimensions.
+        - Insert the NILC Word2Vec model of the SKIP-GRAM type with 50 and 100 dimensions and CBOW with 50 and 100 dimensions.
         - For more information: http://www.nilc.icmc.usp.br/embeddings.
     - The folder called "dicionarios" means dictionaries, i.e., Brazilian Portuguese dicitionaries;
         - For more information: https://sites.google.com/site/latexgrucad/dicionario.
