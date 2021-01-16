@@ -59,13 +59,13 @@ Several occurrences of flooding in the city of São Paulo (Brazil) provide sever
     - Create the directory called "**embeddings**" inside the "data" folder of the "**textual-features**" directory;
     - Create the directory called "**FastText**" inside the "**embeddings**" folder;
         - Insert the NILC FastText model of the SKIP-GRAM type with 50 and 100 dimensions and CBOW with 50 and 100 dimensions.
-        - For more information: http://www.nilc.icmc.usp.br/embeddings.
+        - Download the data on this page: http://www.nilc.icmc.usp.br/embeddings.
     - Create the directory called "**Word2Vec**" inside the "**embeddings**" folder;
         - Insert the NILC Word2Vec model of the SKIP-GRAM type with 50 and 100 dimensions and CBOW with 50 and 100 dimensions.
-        - For more information: http://www.nilc.icmc.usp.br/embeddings.
+        - Download the data on this page: http://www.nilc.icmc.usp.br/embeddings.
     - The folder called "dicionarios" means dictionaries, i.e., Brazilian Portuguese dicitionaries;
-        - For more information: https://sites.google.com/site/latexgrucad/dicionario.
         - In addition those dictionaries is the same used by LibreOffice.
+        - Download the data on Spell Checker link on this page: https://pt-br.libreoffice.org/projetos/vero/#baixarvero.
     - Execute the "**textual_processing.py**" to get all the messages of the Twitter that contain the hashtags related to flooding.
 
 3. **meteorological-features** folder:
