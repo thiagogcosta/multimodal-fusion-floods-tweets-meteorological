@@ -65,8 +65,7 @@ Several occurrences of flooding in the city of São Paulo (Brazil) provide sever
         - For more information: http://www.nilc.icmc.usp.br/embeddings.
     - The folder called "dicionarios" means dictionaries, i.e., Brazilian Portuguese dicitionaries;
         - For more information: https://sites.google.com/site/latexgrucad/dicionario.
-        - In addition those dictionaries is the same used by Libreoffice.
-        - For more information: 
+        - In addition those dictionaries is the same used by LibreOffice.
     - Execute the "**textual_processing.py**" to get all the messages of the Twitter that contain the hashtags related to flooding.
 
 3. **meteorological-features** folder:
