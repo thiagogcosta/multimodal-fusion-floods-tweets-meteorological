@@ -15,28 +15,24 @@ class InsideShape:
         
         geographic_information['inside'] = 0
         
-        count_flood = 0
-        
         list_of_points = geographic_information.index.values.tolist()
 
         inside_ok = 0
         
         inside_not_ok = 0
         
-        while(count_flood < len(list_of_points)):
+        for point in list_of_points:
         
-            df = Point(geographic_information.loc[list_of_points[count_flood]]['longitude'],geographic_information.loc[list_of_points[count_flood]]['latitude'])
+            df = Point(geographic_information.loc[point]['longitude'],geographic_information.loc[point]['latitude'])
             
             if(self.In_shapefile(df, shape)):
-                geographic_information.loc[list_of_points[count_flood],'inside'] = 1
+                geographic_information.loc[point,'inside'] = 1
                 
                 inside_ok+=1
             else:
-                geographic_information.loc[list_of_points[count_flood],'inside'] = 0
+                geographic_information.loc[point,'inside'] = 0
                 
                 inside_not_ok+=1
-                
-            count_flood +=1
         
         # Return only geographic information inside in the city of São Paulo
         geographic_information = geographic_information[geographic_information['inside'] != 0]
