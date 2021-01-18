@@ -15,22 +15,22 @@ class InsideShape:
         
         geographic_information['inside'] = 0
         
-        list_of_points = geographic_information.index.values.tolist()
+        points_vector = geographic_information.index.values.tolist()
 
         inside_ok = 0
         
         inside_not_ok = 0
         
-        for point in list_of_points:
+        for item in points_vector:
         
-            df = Point(geographic_information.loc[point]['longitude'],geographic_information.loc[point]['latitude'])
+            df = Point(geographic_information.loc[item]['longitude'],geographic_information.loc[item]['latitude'])
             
             if(self.In_shapefile(df, shape)):
-                geographic_information.loc[point,'inside'] = 1
+                geographic_information.loc[item,'inside'] = 1
                 
                 inside_ok+=1
             else:
-                geographic_information.loc[point,'inside'] = 0
+                geographic_information.loc[item,'inside'] = 0
                 
                 inside_not_ok+=1
         
