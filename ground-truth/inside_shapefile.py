@@ -21,16 +21,16 @@ class InsideShape:
         
         inside_not_ok = 0
         
-        for item in points_vector:
+        for point in points_vector:
         
-            df = Point(geographic_information.loc[item]['longitude'],geographic_information.loc[item]['latitude'])
+            df = Point(geographic_information.loc[point]['longitude'],geographic_information.loc[point]['latitude'])
             
             if(self.In_shapefile(df, shape)):
-                geographic_information.loc[item,'inside'] = 1
+                geographic_information.loc[point,'inside'] = 1
                 
                 inside_ok+=1
             else:
-                geographic_information.loc[item,'inside'] = 0
+                geographic_information.loc[point,'inside'] = 0
                 
                 inside_not_ok+=1
         
