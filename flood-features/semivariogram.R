@@ -62,7 +62,7 @@ sillp_gau = sillp
 alcance_gau = alcance
 pepita_gau = pepita
 
-local_semivariance = paste(local_raiz, 'semivariance.png', sep='/')
+local_semivariance = paste(local, 'semivariance.png', sep='/')
 
 png(local_semivariance)
 
